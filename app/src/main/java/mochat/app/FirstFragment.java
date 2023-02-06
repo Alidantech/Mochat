@@ -40,7 +40,7 @@ public class FirstFragment extends Fragment {
 
         binding.buttonSecond.setOnClickListener(new View.OnClickListener(){
             public void  onClick(View view1){
-                System.out.println("hello world!");
+                System.out.println("hello world! in mochat");
                  }
         });
 
