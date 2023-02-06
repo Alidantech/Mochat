@@ -17,7 +17,7 @@ public class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
@@ -36,6 +36,14 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
+
+
+        binding.buttonSecond.setOnClickListener(new View.OnClickListener(){
+            public void  onClick(View view1){
+                System.out.println("hello world!");
+                 }
+        });
+
     }
 
     @Override
