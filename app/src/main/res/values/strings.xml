@@ -2,9 +2,6 @@
     <string name="app_name">MoChat</string>
 
     <!--Strings for the homepage of the app-->
-    <string name="home_button">HOME</string>
-    <string name="contacts_button">Contacts</string>
-    <string name="news_button">News</string>
-    <string name="text_message">Alidante \n Hello, how are you</string>
+    <string name="text_message">Hello, how are you, I hope you had a nice day i wanted to ask you something.</string>
     <string name="sender">User name</string>
 </resources>
