@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">MoChat</string>
+    <string name="app_name">My Chats</string>
 
     <!--Strings for the homepage of the app-->
     <string name="text_message">Hello, how are you, I hope you had a nice day i wanted to ask you something.</string>
     <string name="sender">User name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chat_page_label">Chat page</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_chat">Open Chat</string>
 </resources>
