@@ -1,60 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/frame_1"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0B4746"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="0dp">
+        android:theme="@style/Theme.MoChat.AppBarOverlay">
 
-        <TextView
-            android:id="@+id/text_message"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="serif"
-            android:padding="10dp"
-            android:text="@string/text_message"
-            android:textColor="@color/white"
-            android:textSize="11sp" />
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.MoChat.PopupOverlay" />
 
-        <TextView
-            android:id="@+id/sender_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:padding="10dp"
-            android:text="@string/sender"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    </FrameLayout>
+    <include layout="@layout/content_main" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button_open"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/open_chat" />
-    </LinearLayout>
-
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

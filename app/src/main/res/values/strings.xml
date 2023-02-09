@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">My Chats</string>
+    <string name="app_name">MoChat</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">MoChat</string>
 
-    <!--Strings for the homepage of the app-->
-    <string name="text_message">Hello, how are you, I hope you had a nice day i wanted to ask you something.</string>
-    <string name="sender">User name</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="chat_page_label">Chat page</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="open_chat">Open Chat</string>
+    <string name="sender_name">Alidante</string>
+    <string name="sent_message">Hello you had a nice day. or how was it</string>
+    <string name="received_message">Yes it was lit. What about yours?</string>
+    <string name="text">Enter message</string>
+    <string name="todo">TODO</string>
+    <string name="todo_send">this is a send button</string>
+    <string name="latest_message">This is the latest message.</string>
+
 </resources>
