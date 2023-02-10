@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SignUpFragment">
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.app.mochat.SingUpFragment"
+        android:label="@string/register"
+        tools:layout="@layout/fragment_sing_up">
+        <action
+            android:id="@+id/action_SignUpFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.app.mochat.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/fragment_first_to_contact_list_fragment"
+            app:destination="@id/contact_list_Fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.app.mochat.SecondFragment"
+        android:label="@string/sender_name"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contact_list_Fragment"
+        android:name="com.app.mochat.ContactList"
+        android:label="@string/contacts"
+        tools:layout="@layout/fragment_contact_list">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

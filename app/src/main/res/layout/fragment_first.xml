@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#260B4746"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/profile_picture"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="10dp"-->
+<!--            android:src="@drawable/default_profile_pic_1" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/text_message"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="60dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="@string/sender_name"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="14sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/sender_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/latest_message"-->
+<!--            android:layout_marginStart="60dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="11sp" />-->
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            android:background="#D2012D3A"/>
+
+<Button
+    android:id="@+id/button_first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/sender_name"/>
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_contacts_24"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo"
+        android:elevation="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

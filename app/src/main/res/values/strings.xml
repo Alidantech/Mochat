@@ -11,5 +11,27 @@
     <string name="todo">TODO</string>
     <string name="todo_send">this is a send button</string>
     <string name="latest_message">This is the latest message.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contacts">Contacts List</string>
+    <string name="about">About mochat</string>
+    <string name="theme">App theme</string>
+    <string name="title_activity_create_account">create_account</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">Create Account</string>
+    <string name="phone_number">0712345678</string>
+    <string name="password"><![CDATA[A&231Dx1]]></string>
+    <string name="enter_password">Password:</string>
+    <string name="enter_name">Name:</string>
+    <string name="enter_phone">Phone Number:</string>
+    <string name="create_acount">Register</string>
+    <string name="create_account">Register</string>
 
 </resources>

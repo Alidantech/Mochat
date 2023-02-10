@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_name"
+            android:textSize="15sp"
+            android:textColor="#77FFE8"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/sender_name"
+            android:ems="10"
+            android:textSize="15sp"
+            android:maxLength="50"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:autofillHints="username"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_phone"
+            android:textSize="15sp"
+            android:textColor="#77FFE8"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="20dp"
+            android:maxLength="13"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:autofillHints="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_password"
+            android:textSize="15sp"
+            android:textColor="#77FFE8"
+            android:layout_marginStart="20dp"/>
+        <EditText
+            android:id="@+id/password_text"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="15"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            android:autofillHints="password" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#053366"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_margin="50dp"
+            android:onClick="onclick"
+            android:text="@string/create_account" />
+
+    </LinearLayout>
+</FrameLayout>
