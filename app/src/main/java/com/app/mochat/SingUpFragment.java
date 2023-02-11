@@ -88,7 +88,7 @@ public class SingUpFragment extends Fragment {
             public void onClick(View view) {
              NavHostFragment.findNavController(SingUpFragment.this)
                       .navigate(R.id.action_SignUpFragment_to_FirstFragment);
-           }
+            }
         });
     }
     private FragmentSingUpBinding getMenuInflater() {

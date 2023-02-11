@@ -1,68 +1,50 @@
 package com.app.mochat;
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
+import androidx.annotation.Nullable;
 
-import androidx.annotation.NonNull;
-
-public class DatabaseHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
 
-        //users database table
+    public static final String table_name = "MOCHAT_USERS";
+    public static final String user_id = "user_id";
+    public static final String user_name = "user_name";
+    public static final String phone_number = "phone_number";
+    public static final String password = "password";
 
-       /* //message database table
-        private int sender_id;
-        private String sender_name;
-        private int receiver_id;
-        private String message_body;
-        private String send_time;
-        */
-        //Constructors
-                //users
+    public DatabaseHelper(@Nullable Context context) {
+        super(context, "users.db", null, 1);
+    }
 
-       /*         //messages
-        public DatabaseHelper(int sender_id, String sender_name, int receiver_id, String message_body, String send_time) {
-                this.sender_id = sender_id;
-                this.sender_name = sender_name;
-                this.receiver_id = receiver_id;
-                this.message_body = message_body;
-                this.send_time = send_time;
-        }
-                //empty constructor
+    //this method is called the first time yo create a new database.
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String create_table_statement = "CREATE TABLE " + table_name + "(" + user_id + " INT PRIMARY KEY," +
+                                                                            " " + user_name + " VARCHAR," +
+                                                                            " " + phone_number + " INT," +
+                                                                            " " + password + " VARCHAR);";
+        db.execSQL(create_table_statement);
+    }
 
-        */
+    //this method is called if database version number changes
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    }
 
- /*    //This are the senders and getters for the messages table
-        public int getSender_id() {
-                return sender_id;
-        }
-        public void setSender_id(int sender_id) {
-                this.sender_id = sender_id;
-        }
-        public String getSender_name() {
-                return sender_name;
-        }
-        public void setSender_name(String sender_name) {
-                this.sender_name = sender_name;
-        }
-        public int getReceiver_id() {
-                return receiver_id;
-        }
-        public void setReceiver_id(int receiver_id) {
-                this.receiver_id = receiver_id;
-        }
-        public String getMessage_body() {
-                return message_body;
-        }
-        public void setMessage_body(String message_body) {
-                this.message_body = message_body;
-        }
-        public String getSend_time() {
-                return send_time;
-        }
-        public void setSend_time(String send_time) {
-                this.send_time = send_time;
-        }
-*/
+    public boolean addone(SingUpFragment singUpFragment){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+            cv.put(user_id, singUpFragment.getUser_id());
+            cv.put(user_name, singUpFragment.getUser_name());
+            cv.put(phone_number, singUpFragment.getPhone_number());
+            cv.put(password, singUpFragment.getUser_password());
+
+            db.insert(table_name, null, cv);
+
+            return true;
+    }
 }
