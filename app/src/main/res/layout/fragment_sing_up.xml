@@ -76,11 +76,9 @@
             android:id="@+id/button_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#053366"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:layout_margin="50dp"
-            android:onClick="onclick"
             android:text="@string/create_account" />
 
     </LinearLayout>
