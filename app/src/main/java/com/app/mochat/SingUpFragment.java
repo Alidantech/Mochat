@@ -15,6 +15,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.app.mochat.databinding.FragmentSingUpBinding;
 
 public class SingUpFragment extends Fragment {
+
     private DatabaseHelper mDbHelper;
     private FragmentSingUpBinding binding;
 
@@ -86,9 +87,11 @@ public class SingUpFragment extends Fragment {
         binding.buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             NavHostFragment.findNavController(SingUpFragment.this)
-                      .navigate(R.id.action_SignUpFragment_to_FirstFragment);
-            }
+//             NavHostFragment.findNavController(SingUpFragment.this)
+//                      .navigate(R.id.action_SignUpFragment_to_FirstFragment);
+//                System.out.println("the navigation part is working");
+//
+        }
         });
     }
     private FragmentSingUpBinding getMenuInflater() {
